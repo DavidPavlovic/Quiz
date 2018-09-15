@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dxpc" />
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/bitwise"
+                android:text="Be Dexters friend..."
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bitwise"
+                android:text="1) What I love the most?"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ques_one"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/bitwise"
+                android:textColor="#155c92" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/bitwise"
+                android:text="2) What I hate the most?"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/question_two_deedee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bitwise"
+                    android:paddingLeft="8dp"
+                    android:text="Dee Dee"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/question_two_mandark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bitwise"
+                    android:paddingLeft="8dp"
+                    android:text="Mandark"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/bitwise"
+                android:text="3) With who I live in my house?"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_box_mother"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bitwise"
+                    android:text="Mother"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/check_box_brother"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bitwise"
+                    android:text="Brother"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_box_father"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bitwise"
+                    android:text="Father"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/check_box_sister"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bitwise"
+                    android:text="Sister"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:onClick="say"
+                android:text="Evaluate" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dexter"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_below="@id/main_layout"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="100dp"
+            android:src="@drawable/dxquestions1" />
+
+        <TextView
+            android:id="@+id/action_text"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_layout"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="37dp"
+            android:text="If you wanna be my friend, answere this simple questions"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</ScrollView>
